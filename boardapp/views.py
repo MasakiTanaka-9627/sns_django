@@ -30,4 +30,5 @@ def loginfunc(request):
     return render(request, 'login.html')
 
 def listfunc(request):
+    object_list = BoardModel.objects.all
     return render(request, 'list.html')
