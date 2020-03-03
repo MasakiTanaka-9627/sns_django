@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block customcss %}
-<link rel="stylesheet", type='text/css', href="{% static 'style.css' %}">
+<link rel="stylesheet" , type='text/css' , href="{% static 'style.css' %}">
 {% endblock customcss %}
 
 {% block content %}
@@ -10,9 +10,9 @@
   <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
 
   {% if error %}
-    {{ error }}
+  <div class="alert alert-danger" role="alert">{{ error }}</div>
   {% endif %}
-  
+
   <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
   <label for="inputusername" class="sr-only">User Name</label>
   <input type="text" id="inputEmail" class="form-control" name='username' placeholder="username" required autofocus>
