@@ -6,6 +6,7 @@ from .models import BoardModel
 from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 # Create your views here.
 
